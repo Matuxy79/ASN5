@@ -19,3 +19,17 @@ def main():
         elif character == "Mothra":
             if not q.is_empty():
                 mothra_defeat += q.dequeue + "\n"
+        else:
+            q.enqueue(character)
+        
+        character = file.readline().strip()
+
+    #printing the result to console once done
+    if q.is_empty():
+        print("The space monsters were all defeated\n")
+        print("Godzilla beat: \n" + godzilla_defeat)
+        print("Mothra beat: \n" + mothra_defeat)
+    else:
+        print("The space monsters won because of " + q.peek())
+
+main()
