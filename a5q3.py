@@ -4,7 +4,7 @@
 #L16
 
 def to_string(node_chain):
-    """
+    """ 
     Purpose:
         Create a string representation of the node chain.  E.g.,
         [ 1 | *-]-->[ 2 | *-]-->[ 3 | / ]
