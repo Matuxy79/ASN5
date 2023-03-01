@@ -4,10 +4,11 @@
 #L16
 
 #Importing Queue ADT
-from Queue.py import Queue
+from Queue import Queue
 
-def main():
-    q = Queue
+def battle():
+    q = Queue()
+    #change the variable file to another file you want to test
     file = open("monsters2.txt","r")
     character = file.readline().strip()
     godzilla_defeat = ""
@@ -15,10 +16,10 @@ def main():
     while character:
         if character == "Godzilla":
             if not q.is_empty():
-                godzilla_defeat += q.dequeue + "\n"
+                godzilla_defeat += q.dequeue() + "\n"
         elif character == "Mothra":
             if not q.is_empty():
-                mothra_defeat += q.dequeue + "\n"
+                mothra_defeat += q.dequeue() + "\n"
         else:
             q.enqueue(character)
         
@@ -32,4 +33,4 @@ def main():
     else:
         print("The space monsters won because of " + q.peek())
 
-main()
+battle()
