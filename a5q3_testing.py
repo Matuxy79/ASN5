@@ -1,7 +1,7 @@
 # CMPT 145: Assignment 5 Question 1
 # test script
 
-import a5q1 as a5q1
+import a5q3 as a5q1
 import node as N
 
 #### UNIT TEST CASES
