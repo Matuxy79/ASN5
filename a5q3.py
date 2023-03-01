@@ -3,6 +3,8 @@
 #CMPT 145 CRN 27177
 #L16
 
+import node as node 
+
 def to_string(node_chain):
     """ 
     Purpose:
